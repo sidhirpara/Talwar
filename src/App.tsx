@@ -4,6 +4,7 @@ import { ShoppingBag, Search, Menu, X } from 'lucide-react';
 import Gallery from './components/Gallery';
 import SearchBar from './components/SearchBar';
 
+
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
