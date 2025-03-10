@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { ShoppingBag, Search, Menu, X } from 'lucide-react';
 import Gallery from './components/Gallery';
 import SearchBar from './components/SearchBar';
-import CustomCursor from "./components/CustomCursor"; // Import the custom cursor
-import "./styles/CustomCursor.css"; // Import the styles
 
-const App = () => {
+function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -25,9 +23,6 @@ const App = () => {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-rose-50 to-slate-50">
-        {/* Custom Cursor */}
-        <CustomCursor />
-
         {/* Navigation */}
         <nav className={`fixed w-full z-50 transition-all duration-300 ${
           isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
